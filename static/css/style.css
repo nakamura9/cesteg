@@ -27,6 +27,7 @@ footer {
     width: 192px !important;
     min-width: 192px !important;
     margin:24px !important;
+    transition:transform 0.3s linear;
 }
 
 .service-card h6 {
@@ -47,6 +48,7 @@ footer {
 .service-card:hover {
     box-shadow: 0px 2px 4px #999,
                 0px 4px 16px #ddd;
+    transform:scale(1.125)
 }
 
 .overlay {
@@ -61,6 +63,7 @@ footer {
     display:flex;
     flex-direction: row;
     justify-content: center;
+    transition: opacity 0.3s ease-in;
 }
 
 #detail-view {
