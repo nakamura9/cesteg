@@ -33,18 +33,10 @@ footer {
     height: 60vh;
 }
 
-.loge {
-    background-image: url(/cesteg/static/images/solar.jpg);
-    height: 60vh;
-}
-
 .star {
     background-color: whitesmoke;
 }
 
-
-    background-color: black;
-}
 
 .contact-table td {
     padding: 16px;
