@@ -1,0 +1,15 @@
+section {
+    min-height:100vh;
+    padding-top: 66px;
+}
+
+footer {
+    min-height:30vh;
+    padding:24px;
+    color: white;
+    background-color: black;
+}
+
+.black {
+    background-color: black;
+}
