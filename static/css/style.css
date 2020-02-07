@@ -13,3 +13,32 @@ footer {
 .black {
     background-color: black;
 }
+
+.contact-table td {
+    padding: 16px;
+}
+
+.contact-table tr td:first-child {
+    vertical-align: top;
+}
+
+.service-card {
+    max-width: 192px;
+    width: 192px;
+    margin:24px !important;
+}
+
+.service-card h6 {
+    margin-top:16px;
+    text-align: center;
+}
+
+.service-card img {
+    width: 100%;
+    height: auto;
+}
+
+.service-card .card-body {
+    padding: 12px !important;
+
+}
