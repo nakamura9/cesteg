@@ -3,6 +3,10 @@ section {
     padding-top: 66px;
 }
 
+body {
+    background-color: whitesmoke !important;
+}
+
 footer {
     min-height:30vh;
     padding:24px;
@@ -11,5 +15,31 @@ footer {
 }
 
 .black {
-    background-color: black;
+    background-color: #fff;
+    height: 60vh;
+    padding-top: 180px;
 }
+
+.middle {
+    text-align: center;
+}
+
+.move {
+    padding-left: 20px;
+}
+
+.log {
+    background-image: url(/cesteg/static/images/solar.jpg);
+    height: 60vh;
+}
+
+.loge {
+    background-image: url(/cesteg/static/images/solar.jpg);
+    height: 60vh;
+}
+
+.star {
+    background-color: whitesmoke;
+}
+
+
