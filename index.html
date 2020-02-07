@@ -75,35 +75,52 @@
             <div class="row">
                 <div class="col-12">
                     <div class="card-deck">
-                        
-                        <div class="card service-card">
-                            <div class="card-body">
+                        <div class="card service-card" onclick="openDetail('mechanical-engineering-detail')">
+                            <div class="card-body" >
                                 <img src="/static/images/cogwheels.png" alt="">
                                 <h6>Mechanical Engineering</h6>
                             </div>
                         </div>
-                        <div class="card service-card">
+                        <div class="card service-card" onclick='openDetail("welding-detail")'>
                             <div class="card-body">
                                 <img src="/static/images/welding.png" alt="">
                                 <h6>Welding</h6>
                             </div>
                         </div>
-                        <div class="card service-card">
+                        <div class="card service-card" onclick='openDetail("pipework-detail")'>
                             <div class="card-body">
                                 <img src="/static/images/pipes.png" alt="">
                                 <h6>Pipework and Plumbing</h6>
                             </div>
                         </div>
-                        <div class="card service-card">
+                        <div class="card service-card" onclick='openDetail("steel-detail")'>
                             <div class="card-body">
                                 <img src="/static/images/beam.png" alt="">
                                 <h6>Structural Steel and Plate Work</h6>
                             </div>
                         </div>
-                        <div class="card service-card">
+                        <div class="card service-card" onclick='openDetail("pumps-detail")'>
                             <div class="card-body">
                                 <img src="/static/images/pump.png" alt="">
                                 <h6>Industrial Pumps</h6>
+                            </div>
+                        </div>
+                        <div class="card service-card" onclick='openDetail("high-voltage-detail")'>
+                            <div class="card-body">
+                                <img src="/static/images/transformer.png" alt="">
+                                <h6>High Voltage Installations</h6>
+                            </div>
+                        </div>
+                        <div class="card service-card" onclick='openDetail("commercial-detail")'>
+                            <div class="card-body">
+                                <img src="/static/images/electric-motor.png" alt="">
+                                <h6>Commercial Installations</h6>
+                            </div>
+                        </div>
+                        <div class="card service-card" onclick='openDetail("domestic-detail")'>
+                            <div class="card-body">
+                                <img src="/static/images/house.png" alt="">
+                                <h6>Domestic Installations</h6>
                             </div>
                         </div>
                     </div>
@@ -183,9 +200,9 @@
                         zoom: 8
                         });
                     }
-                    </script> -->
+                    </script>
                     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6TpzmulWDc_KnvAtk_qAcdIh_hR5EROA&callback=initMap"
-    async defer></script>
+    async defer></script> -->
                 </div>
             </div>
         </div>
@@ -198,8 +215,54 @@
             <p><div>Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div></p>
             <p><div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div></p>
             <p><div>Icons made by <a href="https://www.flaticon.com/authors/smalllikeart" title="smalllikeart">smalllikeart</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div></p>
+            <p><div>Icons made by <a href="https://www.flaticon.com/authors/surang" title="surang">surang</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div></p>
+            <p><div>Icons made by <a href="https://www.flaticon.com/authors/payungkead" title="Payungkead">Payungkead</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div></p>
+            <p><div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div></p>
         </div>
     </footer>
+    <div class='overlay' onclick='closeDetail()'>
+        <div id="detail-view">
+            <div class="modal-view active" id='mechanical-engineering-detail'>
+                <h4>Mechanical Engineering</h4>
+                <ul>
+
+                    <li>Steam reticulation: plant installation, maintenance works and commissioning.
+                    </li>
+                    <li>Installation of all Mechanical Machinery and Equipment.</li>
+                    <li>Routine maintenance and Plant Rehabilitation.</li>
+                     <li>Maintenance schedules.</li>
+                         <li>Installation and maintenance of conveyers.</li>
+                         
+                         <li>Structural steel erection.</li>
+                         <li>Plant demolishing and Rigging.</li>
+                         <li>All mechanical works on waste and water treatment plants.
+                        </li>
+                </ul>
+            </div>
+            <div class="modal-view" id='welding-detail'>
+                <h4> Welding</h4>
+            </div>
+            <div class="modal-view" id='pipework-detail'>
+                <h4>Industrial Pipework</h4>
+            </div>
+            <div class="modal-view" id='high-voltage-detail'>
+                <h4>High Voltage Electrical Installation</h4>
+            </div>
+            <div class="modal-view" id='pumps-detail'>
+                <h4>Industrial Pumps</h4>
+            </div>
+            <div class="modal-view" id='commercial-detail'>
+                <h4>Commercial Installation and Maintenace</h4>
+            </div>
+            <div class="modal-view" id='domestic-detail'>
+                <h4>Domestic Electrical Work</h4>
+            </div>
+            <div class="modal-view" id='steel-detail'>
+                <h4>Structural steel and Plate work</h4>
+            </div>
+
+        </div>
+    </div>
     </main>
     <script src='static/js/app.js'></script>
     
