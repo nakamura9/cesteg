@@ -16,8 +16,11 @@ footer {
 
 .black {
     background-color: #fff;
-    height: 60vh;
-    padding-top: 180px;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .middle {
@@ -25,12 +28,17 @@ footer {
 }
 
 .move {
-    padding-left: 20px;
+    padding: 20px;
 }
 
 .log {
-    background-image: url(/cesteg/static/images/solar.jpg);
-    height: 60vh;
+    height: 90vh;
+    overflow:hidden;
+}
+
+.log img {
+    width: 100%;
+    height:auto;
 }
 
 .star {
@@ -110,7 +118,7 @@ footer {
     display: block!important;
 }
 
-.map {
+#map {
     height: 250px;
     padding:16px;
 }
