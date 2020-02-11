@@ -25,6 +25,13 @@ footer {
     background-color: black;
 }
 
+.about {
+    padding-left: 20px;
+    width: 312px;
+}
+.card-text{
+    text-align: justify;
+}
 .black {
     background-color: #fff;
     height: 100%;
@@ -33,6 +40,8 @@ footer {
     align-items: center;
     justify-content: center;
 }
+
+
 
 .middle {
     text-align: center;
@@ -261,3 +270,7 @@ footer {
             
 }
 
+.navbar img {
+    height: 40px;
+    width: auto;
+}

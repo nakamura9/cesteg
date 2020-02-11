@@ -4,7 +4,7 @@
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
-    <title>CESTEG Engineering</title>
+    <title> CESTEG Engineering</title>
     <meta name="charset" content="utf-8">
     <meta name="robots" content='index follow' />
 
@@ -25,14 +25,14 @@
 
 <body data-spy="scroll" data-target="#app-nav" data-offset="60">
     <nav id='app-nav' class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
-        <a class="navbar-brand" href="#home"><img src="/static/images/logo.png" alt="" srcset=""></a>
+        <a class="navbar-brand" href="#home"><img src="/static/images/logo.svg" alt="" srcset=""></a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
             aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                
+
                 <li class="nav-item">
                     <a class="nav-link" href="#products">Products</a>
                 </li>
@@ -51,35 +51,36 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#brands">Our Partners</a>
                 </li>
-                
+
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact Us</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <main >
+    <main>
         <section id="home" style="padding-top: 0px;">
             <div class="container-fluid">
                 <div class="row no-gutters">
                     <div class="col-md-4 ">
-                        <div class='black'>
-                            <h2 class="middle"> CESTEG Engineering </h2>
+                        <div class="black">
+                            <h2 class="middle"><img src="static/images/logo.svg" style="height: auto; width: 150px;">
+                                Engineering </h2>
 
                             <p class="move"> CESTEG Engineering is a mechanical, Automation & Electrical Engineering
                                 Company and a provider of innovative approaches to construction and other related
                                 engineering services throughout the country of Southern Africa</p>
-                                <br>
-                                <a class="btn btn-primary btn-lg left" href='#contact'>Contact Us </a>
+                            <br>
+                            <a class="btn btn-primary btn-lg left" href="#contact"> Contact Us </a>
                         </div>
                     </div>
                     <div class="col-md-8 log">
-                        <img src="/static/images/solar.jpg" alt="">
+                        <img src="static/images/solar.jpg" alt="">
                     </div>
                 </div>
             </div>
         </section>
-        
+
         <section id="products">
             <h2>Products</h2>
             <div class="product-container">
@@ -98,24 +99,6 @@
                         <div class="card">
                             <img src="" alt="">
                             <div class="card-body"></div>
-                        </div>
-                        <div class="card">
-                            <img src="" alt="">
-                            <div class="card-body"></div>
-                        </div>
-                        <div class="card">
-                            <img src="" alt="">
-                            <div class="card-body"></div>
-                        </div>
-                    </div>
-                    <div class="product-navigation">
-                        <div class="btn-group">
-                            <button class="btn"><i class="fas fa-arrow-left    "></i></button>
-                            <button class="btn"><i class="fas fa-arrow-right    "></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </section>
         <section id="services">
             <h2>Services</h2>
@@ -129,47 +112,42 @@
                                     <h6>Mechanical Engineering</h6>
                                 </div>
                             </div>
-                            <div class="card service-card" onclick='openDetail("welding-detail")'>
+                            <div class="card service-card" onclick="openDetail('welding-detail')">
                                 <div class="card-body">
                                     <img src="/static/images/welding.png" alt="">
                                     <h6>Welding</h6>
 
                                 </div>
                             </div>
-                            <div class="card service-card" onclick='openDetail("pipework-detail")'>
+                            <div class="card service-card" onclick="openDetail('pipework-detail')">
                                 <div class="card-body">
                                     <img src="/static/images/pipes.png" alt="">
                                     <h6>Pipework and Plumbing</h6>
 
                                 </div>
                             </div>
-                            <div class="card service-card" onclick='openDetail("steel-detail")'>
+                            <div class="card service-card" onclick="openDetail('steel-detail')">
                                 <div class="card-body">
                                     <img src="/static/images/beam.png" alt="">
                                     <h6>Structural Steel and Plate Work</h6>
-
-
                                 </div>
                             </div>
-                            <div class="card service-card" onclick='openDetail("pumps-detail")'>
+                            <div class="card service-card" onclick="openDetail('pumps-detail)">
                                 <div class="card-body">
                                     <img src="/static/images/pump.png" alt="">
                                     <h6>Industrial Pumps</h6>
-
                                 </div>
                             </div>
                             <div class="card service-card" onclick='openDetail("high-voltage-detail")'>
                                 <div class="card-body">
                                     <img src="/static/images/transformer.png" alt="">
                                     <h6>High Voltage Installations</h6>
-
                                 </div>
                             </div>
                             <div class="card service-card" onclick='openDetail("commercial-detail")'>
                                 <div class="card-body">
                                     <img src="/static/images/electric-motor.png" alt="">
                                     <h6>Commercial Installations</h6>
-
                                 </div>
                             </div>
                             <div class="card service-card" onclick='openDetail("domestic-detail")'>
@@ -184,7 +162,7 @@
                 </div>
             </div>
         </section>
-        
+
         <section id="case-studies">
             <h2> <strong>Case Studies </strong></h2>
             <hr class="my-2 display">
@@ -249,7 +227,7 @@
                         <p>Keep your finger on the pulse</p>
                     </div>
                 </div>
-                <img src="/static/images/bulb.jpg" alt="news-bulb" >
+                <img src="/static/images/bulb.jpg" alt="news-bulb">
             </div>
             <div class="news-cards">
                 <div class="card">
@@ -269,6 +247,26 @@
         </section>
         <section id="about">
             <h2>About</h2>
+            <div class="card-deck container-fluid justify-content-center">
+                <div class="card about col-sm-12 col-md-4">
+                    <img src="static/images/user.svg" height="auto">
+                    <div class="card-body">
+                        <h5 class="card-title"> Godknows Kashiri</h5>
+                        <p class="card-text">Mr Kashiri has 5 years experience in the electrical power engineering and
+                            has handled major projects with Rosco Africa, Starling Electricaland Corleon Trading.
+                            He is a qualified Schneider equipment installer. Zimbabwe Institute of Engineers Member.</p>
+                    </div>
+                </div>
+                <div class="card about col-sm-12 col-md-4">
+                    <img src="static/images/user.svg" height="auto">
+                    <div class="card-body">
+                        <h5 class="card-title">Cleopas Chapanga</h5>
+                        <p class="card-text">Mr Chapanga has over 20 years experience in project and finance management
+                            and has handled major projects with Telecel , Telone and NGOs like Goal Zimbabwe and WWF
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="brands">
             <h2>Our Partners</h2>
@@ -299,7 +297,7 @@
                             <table class='contact-table'>
                                 <tbody>
                                     <tr>
-                                        <td><i class="fas fa-map-marker-alt  fa-2x  "></i></td>
+                                        <td><i class="fas fa-map-marker-alt  fa-2x  "></img></td>
                                         <td>
                                             <h4>Address</h4>
                                             <p>Shop 1, Avon House, Queensway Shopping Centre,
@@ -363,7 +361,7 @@
         </section>
         <footer>
             <a href="">Attributions</a>
-            <div style='display:none;'>
+            <div style="display:none;">
                 <p>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>
                     from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
                 <p>
@@ -410,23 +408,23 @@
                     <img src="/static/images/gears.jpg" alt="">
                     <div class="modal-view-content">
                         <h2>Mechanical Engineering</h2>
-                    <ul>
-                        <li>Steam reticulation: plant installation, maintenance works and
-                            commissioning.
-                        </li>
-                        <li>Installation of all Mechanical Machinery and Equipment.</li>
-                        <li>Routine maintenance and Plant Rehabilitation.</li>
-                        <li>Maintenance schedules.</li>
-                        <li>Installation and maintenance of conveyers.</li>
+                        <ul>
+                            <li>Steam reticulation: plant installation, maintenance works and
+                                commissioning.
+                            </li>
+                            <li>Installation of all Mechanical Machinery and Equipment.</li>
+                            <li>Routine maintenance and Plant Rehabilitation.</li>
+                            <li>Maintenance schedules.</li>
+                            <li>Installation and maintenance of conveyers.</li>
 
-                        <li>Structural steel erection.</li>
-                        <li>Plant demolishing and Rigging.</li>
-                        <li>All mechanical works on waste and water treatment plants.
-                        </li>
-                    </ul>
+                            <li>Structural steel erection.</li>
+                            <li>Plant demolishing and Rigging.</li>
+                            <li>All mechanical works on waste and water treatment plants.
+                            </li>
+                        </ul>
 
                     </div>
-                    
+
                 </div>
                 <div class="modal-view" id='welding-detail'>
                     <img src="/static/images/Steel-Fabrication.jpg" alt="">
@@ -444,62 +442,65 @@
                             <li>Training of welders and pipe fitters</li>
                         </ul>
                     </div>
-                    
+
                 </div>
                 <div class="modal-view" id='pipework-detail'>
                     <img src="/static/images/piping.jpg" alt="">
                     <div class="modal-view-content">
                         <h2>Industrial Pipework</h2>
-                    <p>Fabricating and installation of carbon and stainless steel pipes.</p>
-                    <ul>
-                        <li>Fabrication of carbon steel and stainless steel tanks as per specification</li>
-                        <li>Fabrication of threaded steel pipes and all PVC pipes.</li>
-                        <li>Identifying test circuits and spading limits for flushing and hydrotesting of
-                            pressure vessels</li>
-                        <li>Erection of tanks and high pressure vessels,</li>
-                        <li>Replacement of warn out pipes</li>
-                        <li>Maintenance and shut down works</li>
-                        <li>Water and sewer construction /upgrading</li>
-                        <li>High pressure welding and all coded works</li>
-                        <li>Commissioning of various Plants</li>
-                    </ul>
+                        <p>Fabricating and installation of carbon and stainless steel pipes.</p>
+                        <ul>
+                            <li>Fabrication of carbon steel and stainless steel tanks as per specification</li>
+                            <li>Fabrication of threaded steel pipes and all PVC pipes.</li>
+                            <li>Identifying test circuits and spading limits for flushing and hydrotesting of
+                                pressure vessels</li>
+                            <li>Erection of tanks and high pressure vessels,</li>
+                            <li>Replacement of warn out pipes</li>
+                            <li>Maintenance and shut down works</li>
+                            <li>Water and sewer construction /upgrading</li>
+                            <li>High pressure welding and all coded works</li>
+                            <li>Commissioning of various Plants</li>
+                        </ul>
                     </div>
-                    
+
                 </div>
                 <div class="modal-view" id='high-voltage-detail'>
                     <img src="/static/images/high-voltage.jpg" alt="high voltage installations">
                     <div class="modal-view-content">
                         <h2>High Voltage Electrical Installation</h2>
-                    <p>Our company does not limit itself to Low Voltage (LV) installations and is able to offer its clients' a full design and installation of HV/LV systems, both temporary
-                        and permanent. We do Maintenance of Substations, Transformers and HT switching.</p>
-                    
+                        <p>Our company does not limit itself to Low Voltage (LV) installations and is able to offer its
+                            clients' a full design and installation of HV/LV systems, both temporary
+                            and permanent. We do Maintenance of Substations, Transformers and HT switching.</p>
+
                     </div>
-                    
+
                 </div>
                 <div class="modal-view" id='pumps-detail'>
                     <img src="/static/images/pump.jpg" alt="">
                     <div class="modal-view-content">
                         <h2>Industrial Pumps</h2>
-                    <p>Installations, maintenance and overhaul of Warman slurry pumps, hose pumps, reciprocation pumps, gear pumps, vane pumps, vacuum pumps, and centrifugal pumps. Pump alignment. This includes troubleshooting during commissioning
-                        and hand over.</p>
+                        <p>Installations, maintenance and overhaul of Warman slurry pumps, hose pumps, reciprocation
+                            pumps, gear pumps, vane pumps, vacuum pumps, and centrifugal pumps. Pump alignment. This
+                            includes troubleshooting during commissioning
+                            and hand over.</p>
                     </div>
-                    
+
                 </div>
                 <div class="modal-view" id='commercial-detail'>
                     <img src="/static/images/power-panel.JPG" alt="">
                     <div class="modal-view-content">
                         <h2>Commercial Installation and Maintenace</h2>
-                    <p>Commercial and Industrial installations form the backbone of the company’s day
-                        to day operations. Our commercial side covers all manners of works including
-                        factory and office installations, amenity‐lighting and even town center and
-                        private clients.
-                        Fusan Construction carries an extensive stock of site temporary distribution
-                        panels, 400v/230v. Our temporary site mains panels can accept loads of up to
-                        3,000amps on a three phase load distribution, and all are supplied with earth
-                        leakage protection. We are able to respond urgently to any given emergency, or
-                        alternatively plan and install a long term solution to an on-going project.</p>
+                        <p>Commercial and Industrial installations form the backbone of the company’s day
+                            to day operations. Our commercial side covers all manners of works including
+                            factory and office installations, amenity‐lighting and even town center and
+                            private clients.
+                            Fusan Construction carries an extensive stock of site temporary distribution
+                            panels, 400v/230v. Our temporary site mains panels can accept loads of up to
+                            3,000amps on a three phase load distribution, and all are supplied with earth
+                            leakage protection. We are able to respond urgently to any given emergency, or
+                            alternatively plan and install a long term solution to an on-going project.</p>
                     </div>
-                    
+
 
                 </div>
                 <div class="modal-view" id='domestic-detail'>
@@ -523,7 +524,7 @@
                             <li>Painting</li>
                         </ul>
                     </div>
-                    
+
                 </div>
 
             </div>
@@ -538,21 +539,21 @@
     <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-analytics.js"></script>
 
     <script>
-    // Your web app's Firebase configuration
-    var firebaseConfig = {
-        apiKey: "AIzaSyBlo0GhMKQLwG765RDF5f3_WGnmJ2b6zUA",
-        authDomain: "cesteg-news.firebaseapp.com",
-        databaseURL: "https://cesteg-news.firebaseio.com",
-        projectId: "cesteg-news",
-        storageBucket: "cesteg-news.appspot.com",
-        messagingSenderId: "726794264688",
-        appId: "1:726794264688:web:58945a55af9c2f274694b5",
-        measurementId: "G-KV7HTKHLHE"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    firebase.analytics();
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBlo0GhMKQLwG765RDF5f3_WGnmJ2b6zUA",
+            authDomain: "cesteg-news.firebaseapp.com",
+            databaseURL: "https://cesteg-news.firebaseio.com",
+            projectId: "cesteg-news",
+            storageBucket: "cesteg-news.appspot.com",
+            messagingSenderId: "726794264688",
+            appId: "1:726794264688:web:58945a55af9c2f274694b5",
+            measurementId: "G-KV7HTKHLHE"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
     </script>
 </body>
-
-</html>
+<footer>
+    <img src="static/images/gonc.png" </footer> </html>
