@@ -83,22 +83,8 @@
 
         <section id="products">
             <h2>Products</h2>
-            <div class="product-container">
-                <div class="product-category">
-                    <h4>Product Category</h4>
-                    <button class="btn text-white">
-                        <i class="fa fa-caret-left" aria-hidden="true"></i>
-                    </button>
-                </div>
-                <div class="product-category-contents">
-                    <p class='product-category-description'>
-                        This category includes these products
-                    </p>
-                    <hr>
-                    <div class="product-cards">
-                        <div class="card">
-                            <img src="" alt="">
-                            <div class="card-body"></div>
+            
+            <div id="products-root"></div>
         </section>
         <section id="services">
             <h2>Services</h2>
@@ -171,7 +157,7 @@
                     <div class="carousel-item active">
                         <div class="row">
                             <div class="col-sm-12 col-md-4">
-                                <img src="static/images/solar.jpg" alt="" style="width:100%;height:auto;">
+                                <img  class='lozad' data-src="static/images/solar.jpg" alt="" style="width:100%;height:auto;">
                             </div>
                             <div class="col-md-8 col-sm-4 case-studies">
                                 <p><b> Scanvik - Ngezi Project</b></p>
@@ -186,7 +172,7 @@
                     <div class="carousel-item">
                         <div class="row">
                             <div class=" col-sm-12 col-md-4 case-studies">
-                                <img src="static/images/black-granite3.jpg" alt="" style="width:100%;height:auto;">
+                                <img  class='lozad' data-src="static/images/black-granite3.jpg" alt="" style="width:100%;height:auto;">
                             </div>
                             <div class="col-md-8 col-sm-12 case-studies">
                                 <p><b> Black Granite - Plant Expansion Project</b></p>
@@ -201,7 +187,7 @@
                     <div class="carousel-item">
                         <div class="row">
                             <div class=" col-sm-12 col-md-4 case-studies">
-                                <img src="static/images/pipe.jpg" alt="" style="width: 100%; height: auto;">
+                                <img  class='lozad' data-src="static/images/pipe.jpg" alt="" style="width: 100%; height: auto;">
                             </div>
                             <div class=" col-md-8 col-sm-12 case-studies">
                                 <p><b> Cosira International - Unki Project</b></p>
@@ -219,31 +205,9 @@
             </div>
         </section>
         <section id="news">
-            <h2>News</h2>
-            <div class='news-hero'>
-                <div class="news-hero-overlay">
-                    <div class="news-head">
-                        <h2>CESTEG News</h2>
-                        <p>Keep your finger on the pulse</p>
-                    </div>
-                </div>
-                <img src="/static/images/bulb.jpg" alt="news-bulb">
-            </div>
-            <div class="news-cards">
-                <div class="card">
-                    <img src="" alt="">
-                    <div class="card-body">
-                        <h4>News Item</h4>
-                        <p>Why this is news worthy</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body"></div>
-                </div>
-                <div class="card">
-                    <div class="card-body"></div>
-                </div>
-            </div>
+
+            
+            <div id="news-root"></div>
         </section>
         <section id="about">
             <h2>About</h2>
@@ -405,7 +369,7 @@
         <div class='overlay' onclick='closeDetail()'>
             <div id="detail-view">
                 <div class="modal-view active" id='mechanical-engineering-detail'>
-                    <img src="/static/images/gears.jpg" alt="">
+                    <img  class='lozad' data-src="/static/images/gears.jpg" alt="">
                     <div class="modal-view-content">
                         <h2>Mechanical Engineering</h2>
                         <ul>
@@ -427,7 +391,7 @@
 
                 </div>
                 <div class="modal-view" id='welding-detail'>
-                    <img src="/static/images/Steel-Fabrication.jpg" alt="">
+                    <img  class='lozad' data-src="/static/images/Steel-Fabrication.jpg" alt="">
                     <div class="modal-view-content">
                         <h2> Welding</h2>
                         <p>Argon welding of carbon steel and stainless steel products.</p>
@@ -445,7 +409,7 @@
 
                 </div>
                 <div class="modal-view" id='pipework-detail'>
-                    <img src="/static/images/piping.jpg" alt="">
+                    <img  class='lozad' data-src="/static/images/piping.jpg" alt="">
                     <div class="modal-view-content">
                         <h2>Industrial Pipework</h2>
                         <p>Fabricating and installation of carbon and stainless steel pipes.</p>
@@ -465,7 +429,7 @@
 
                 </div>
                 <div class="modal-view" id='high-voltage-detail'>
-                    <img src="/static/images/high-voltage.jpg" alt="high voltage installations">
+                    <img  class='lozad' data-src="/static/images/high-voltage.jpg" alt="high voltage installations">
                     <div class="modal-view-content">
                         <h2>High Voltage Electrical Installation</h2>
                         <p>Our company does not limit itself to Low Voltage (LV) installations and is able to offer its
@@ -476,7 +440,7 @@
 
                 </div>
                 <div class="modal-view" id='pumps-detail'>
-                    <img src="/static/images/pump.jpg" alt="">
+                    <img  class='lozad' data-src="/static/images/pump.jpg" alt="">
                     <div class="modal-view-content">
                         <h2>Industrial Pumps</h2>
                         <p>Installations, maintenance and overhaul of Warman slurry pumps, hose pumps, reciprocation
@@ -487,7 +451,7 @@
 
                 </div>
                 <div class="modal-view" id='commercial-detail'>
-                    <img src="/static/images/power-panel.JPG" alt="">
+                    <img  class='lozad' data-src="/static/images/power-panel.JPG" alt="">
                     <div class="modal-view-content">
                         <h2>Commercial Installation and Maintenace</h2>
                         <p>Commercial and Industrial installations form the backbone of the company’s day
@@ -504,13 +468,13 @@
 
                 </div>
                 <div class="modal-view" id='domestic-detail'>
-                    <img src="/static/images/solar-domestic.JPG" alt="solar panel roof">
+                    <img  class='lozad' data-src="/static/images/solar-domestic.JPG" alt="solar panel roof">
                     <div class="modal-view-content">
                         <h2>Domestic Electrical Work</h2>
                     </div>
                 </div>
                 <div class="modal-view" id='steel-detail'>
-                    <img src="/static/images/structural-steel-fabrication.jpg" alt="">
+                    <img  class='lozad' data-src="/static/images/structural-steel-fabrication.jpg" alt="">
 
                     <div class="modal-view-content">
                         <h2>Structural steel and Plate work</h2>
@@ -530,30 +494,10 @@
             </div>
         </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
     <script src='static/js/app.js'></script>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-        https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-analytics.js"></script>
-
-    <script>
-        // Your web app's Firebase configuration
-        var firebaseConfig = {
-            apiKey: "AIzaSyBlo0GhMKQLwG765RDF5f3_WGnmJ2b6zUA",
-            authDomain: "cesteg-news.firebaseapp.com",
-            databaseURL: "https://cesteg-news.firebaseio.com",
-            projectId: "cesteg-news",
-            storageBucket: "cesteg-news.appspot.com",
-            messagingSenderId: "726794264688",
-            appId: "1:726794264688:web:58945a55af9c2f274694b5",
-            measurementId: "G-KV7HTKHLHE"
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        firebase.analytics();
-    </script>
+    <script src='static/js/main.js'></script>
+    
 </body>
 <footer>
-    <img src="static/images/gonc.png" </footer> </html>
+    <img  class='lozad' data-src="static/images/gonc.png" </footer> </html>

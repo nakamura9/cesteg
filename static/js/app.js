@@ -1,3 +1,7 @@
+
+var observer = lozad();
+observer.observe();
+
 var active = "mechanical-engineering-detail";
 
 function openDetail(name){
