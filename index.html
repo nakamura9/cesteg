@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
+    <nav id='app-nav' class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
         <a class="navbar-brand" href="#home"><img src="/static/images/logo.svg" alt="" srcset=""></a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
             aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,6 +41,12 @@
                     <a class="nav-link" href="#services">Services</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="#news">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#news">Our Partners</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#case-studies">Case Studies</a>
                 </li>
                 <li class="nav-item">
@@ -49,7 +55,7 @@
             </ul>
         </div>
     </nav>
-    <main>
+    <main data-spy="scroll" data-target="#app-nav" data-offset="0">
         <section id="home" style="padding-top: 0px;">
             <div class="container-fluid">
                 <div class="row no-gutters">
@@ -215,6 +221,12 @@
         <section id="products">
             <h2>Products</h2>
         </section>
+        <section id="news">
+            <h2>News</h2>
+        </section>
+        <section id="brands">
+            <h2>Our Partners</h2>
+        </section>
         <section id="contact">
             <h2>Contact Us</h2>
             <div class="container">
@@ -342,9 +354,8 @@
                     <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>
                         from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
                 </p>
-                <p>
-                    <div> Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> 
-                        from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></div>
+                <p>Photo by Ashes Sitoula on Unsplash</p>
+                <p>Photo by Dean Brierley on Unsplash</p>
             </div>
         </footer>
         <div class='overlay' onclick='closeDetail()'>
@@ -440,6 +451,29 @@
         </div>
     </main>
     <script src='static/js/app.js'></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-analytics.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyBlo0GhMKQLwG765RDF5f3_WGnmJ2b6zUA",
+        authDomain: "cesteg-news.firebaseapp.com",
+        databaseURL: "https://cesteg-news.firebaseio.com",
+        projectId: "cesteg-news",
+        storageBucket: "cesteg-news.appspot.com",
+        messagingSenderId: "726794264688",
+        appId: "1:726794264688:web:58945a55af9c2f274694b5",
+        measurementId: "G-KV7HTKHLHE"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    </script>
 </body>
 <footer>
     <img src="static/images/gonc.png"
