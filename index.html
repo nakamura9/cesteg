@@ -17,12 +17,13 @@
     <link rel="stylesheet" href="static/css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Changa+One&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#app-nav" data-offset="60">
     <nav id='app-nav' class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
         <a class="navbar-brand" href="#home"><img src="/static/images/logo.png" alt="" srcset=""></a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
@@ -31,9 +32,7 @@
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
+                
                 <li class="nav-item">
                     <a class="nav-link" href="#products">Products</a>
                 </li>
@@ -41,21 +40,25 @@
                     <a class="nav-link" href="#services">Services</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="#case-studies">Case Studies</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#news">News</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#news">Our Partners</a>
+                    <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#case-studies">Case Studies</a>
+                    <a class="nav-link" href="#brands">Our Partners</a>
                 </li>
+                
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact Us</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <main data-spy="scroll" data-target="#app-nav" data-offset="0">
+    <main >
         <section id="home" style="padding-top: 0px;">
             <div class="container-fluid">
                 <div class="row no-gutters">
@@ -76,59 +79,39 @@
                 </div>
             </div>
         </section>
-        <section id="about">
-            <h2>About</h2>
-        </section>
-        <section id="case-studies">
-            <h2> <strong>Case Studies </strong></h2>
-            <hr class="my-2 display">
-            <div id="case-studis" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-4">
-                                <img src="static/images/solar.jpg" alt="" style="width:100%;height:auto;">
-                            </div>
-                            <div class="col-md-8 col-sm-4 case-studies">
-                                <p><b> Scanvik - Ngezi Project</b></p>
-                                <p>Steel fabrication, mechanical equipment & machinery installation
-                                    including commissioning.</p>
-                                <br>
-                                <p><b>Roger Bester</b> <i>Construction Manager</i></p>
-                                <p>+27 832 817 569 </p>
-                            </div>
+        
+        <section id="products">
+            <h2>Products</h2>
+            <div class="product-container">
+                <div class="product-category">
+                    <h4>Product Category</h4>
+                    <button class="btn text-white">
+                        <i class="fa fa-caret-left" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <div class="product-category-contents">
+                    <p class='product-category-description'>
+                        This category includes these products
+                    </p>
+                    <hr>
+                    <div class="product-cards">
+                        <div class="card">
+                            <img src="" alt="">
+                            <div class="card-body"></div>
+                        </div>
+                        <div class="card">
+                            <img src="" alt="">
+                            <div class="card-body"></div>
+                        </div>
+                        <div class="card">
+                            <img src="" alt="">
+                            <div class="card-body"></div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class=" col-sm-12 col-md-4 case-studies">
-                                <img src="static/images/black-granite3.jpg" alt="" style="width:100%;height:auto;">
-                            </div>
-                            <div class="col-md-8 col-sm-12 case-studies">
-                                <p><b> Black Granite - Plant Expansion Project</b></p>
-                                <p>Mechanical Installation and commissioning of overheadcranes, stone
-                                    cutting and polishing machines.</p>
-                                <br>
-                                <p><b>Zeddy Utsiwegota</b> <i>Director</i></p>
-                                <p>+263 4 611 690/2</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class=" col-sm-12 col-md-4 case-studies">
-                                <img src="static/images/pipe.jpg" alt="" style="width: 100%; height: auto;">
-                            </div>
-                            <div class=" col-md-8 col-sm-12 case-studies">
-                                <p><b> Cosira International - Unki Project</b></p>
-                                <p>Pipe work, Structural steel installation. Installation of conveyors.
-                                    Installation and alignment of pumps. Commissioning and handover of
-                                    plant to client.</p>
-
-                                <br>
-                                <p><b>Daniel O. Lawings</b> <i>Project Manager</i></p>
-                                <p> +27 716 790 954</p>
-                            </div>
+                    <div class="product-navigation">
+                        <div class="btn-group">
+                            <button class="btn"><i class="fas fa-arrow-left    "></i></button>
+                            <button class="btn"><i class="fas fa-arrow-right    "></i></button>
                         </div>
                     </div>
                 </div>
@@ -201,11 +184,91 @@
                 </div>
             </div>
         </section>
-        <section id="products">
-            <h2>Products</h2>
+        
+        <section id="case-studies">
+            <h2> <strong>Case Studies </strong></h2>
+            <hr class="my-2 display">
+            <div id="case-studis" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-4">
+                                <img src="static/images/solar.jpg" alt="" style="width:100%;height:auto;">
+                            </div>
+                            <div class="col-md-8 col-sm-4 case-studies">
+                                <p><b> Scanvik - Ngezi Project</b></p>
+                                <p>Steel fabrication, mechanical equipment & machinery installation
+                                    including commissioning.</p>
+                                <br>
+                                <p><b>Roger Bester</b> <i>Construction Manager</i></p>
+                                <p>+27 832 817 569 </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class=" col-sm-12 col-md-4 case-studies">
+                                <img src="static/images/black-granite3.jpg" alt="" style="width:100%;height:auto;">
+                            </div>
+                            <div class="col-md-8 col-sm-12 case-studies">
+                                <p><b> Black Granite - Plant Expansion Project</b></p>
+                                <p>Mechanical Installation and commissioning of overheadcranes, stone
+                                    cutting and polishing machines.</p>
+                                <br>
+                                <p><b>Zeddy Utsiwegota</b> <i>Director</i></p>
+                                <p>+263 4 611 690/2</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class=" col-sm-12 col-md-4 case-studies">
+                                <img src="static/images/pipe.jpg" alt="" style="width: 100%; height: auto;">
+                            </div>
+                            <div class=" col-md-8 col-sm-12 case-studies">
+                                <p><b> Cosira International - Unki Project</b></p>
+                                <p>Pipe work, Structural steel installation. Installation of conveyors.
+                                    Installation and alignment of pumps. Commissioning and handover of
+                                    plant to client.</p>
+
+                                <br>
+                                <p><b>Daniel O. Lawings</b> <i>Project Manager</i></p>
+                                <p> +27 716 790 954</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="news">
             <h2>News</h2>
+            <div class='news-hero'>
+                <div class="news-hero-overlay">
+                    <div class="news-head">
+                        <h2>CESTEG News</h2>
+                        <p>Keep your finger on the pulse</p>
+                    </div>
+                </div>
+                <img src="/static/images/bulb.jpg" alt="news-bulb" >
+            </div>
+            <div class="news-cards">
+                <div class="card">
+                    <img src="" alt="">
+                    <div class="card-body">
+                        <h4>News Item</h4>
+                        <p>Why this is news worthy</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body"></div>
+                </div>
+                <div class="card">
+                    <div class="card-body"></div>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <h2>About</h2>
         </section>
         <section id="brands">
             <h2>Our Partners</h2>
@@ -277,7 +340,7 @@
                         <div id="map">
 
                         </div>
-                        <script>
+                        <!-- <script>
                     var map;
                     var position = {lng: 31.060532, lat:-17.840478};
                     function initMap() {
@@ -293,7 +356,7 @@
                     }
                     </script>
                     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6TpzmulWDc_KnvAtk_qAcdIh_hR5EROA&callback=initMap"
-    async defer></script>
+    async defer></script> -->
                     </div>
                 </div>
             </div>
@@ -344,9 +407,10 @@
         <div class='overlay' onclick='closeDetail()'>
             <div id="detail-view">
                 <div class="modal-view active" id='mechanical-engineering-detail'>
-                    <h4>Mechanical Engineering</h4>
+                    <img src="/static/images/gears.jpg" alt="">
+                    <div class="modal-view-content">
+                        <h2>Mechanical Engineering</h2>
                     <ul>
-
                         <li>Steam reticulation: plant installation, maintenance works and
                             commissioning.
                         </li>
@@ -360,74 +424,106 @@
                         <li>All mechanical works on waste and water treatment plants.
                         </li>
                     </ul>
+
+                    </div>
+                    
                 </div>
                 <div class="modal-view" id='welding-detail'>
-                    <h4> Welding</h4>
-                    Argon welding of carbon steel and stainless steel products.
-                    - Stick welding of carbon steel and stainless steel products.
-                    - Argon and stick welding of carbon and stainless steel pipes.
-                    - Welding of structural stainless steel and carbon steel products.
-                    - Welding of carbon steel and stainless tanks.
-                    - Design of weld procedures.
-                    - All coded welding works.
-                    - Rebuilding of warn parts and Hard facing.
-                    - Training of welders and pipe fitters
+                    <img src="/static/images/Steel-Fabrication.jpg" alt="">
+                    <div class="modal-view-content">
+                        <h2> Welding</h2>
+                        <p>Argon welding of carbon steel and stainless steel products.</p>
+                        <ul>
+                            <li>Stick welding of carbon steel and stainless steel products.</li>
+                            <li>Argon and stick welding of carbon and stainless steel pipes.</li>
+                            <li>Welding of structural stainless steel and carbon steel products.</li>
+                            <li>Welding of carbon steel and stainless tanks.</li>
+                            <li>Design of weld procedures.</li>
+                            <li>All coded welding works.</li>
+                            <li>Rebuilding of warn parts and Hard facing.</li>
+                            <li>Training of welders and pipe fitters</li>
+                        </ul>
+                    </div>
+                    
                 </div>
                 <div class="modal-view" id='pipework-detail'>
-                    <h4>Industrial Pipework</h4>
-                    Fabricating and installation of carbon and stainless steel pipes.
-                    - Fabrication of carbon steel and stainless steel tanks as per specification,
-                    - Fabrication of threaded steel pipes and all PVC pipes.
-                    - Identifying test circuits and spading limits for flushing and hydrotesting of
-                    pressure vessels,
-                    - Erection of tanks and high pressure vessels,
-                    - Replacement of warn out pipes,
-                    - Maintenance and shut down works,
-                    - Water and sewer construction /upgrading,
-                    - High pressure welding and all coded works.
-                    - Commissioning of various Plants.
+                    <img src="/static/images/piping.jpg" alt="">
+                    <div class="modal-view-content">
+                        <h2>Industrial Pipework</h2>
+                    <p>Fabricating and installation of carbon and stainless steel pipes.</p>
+                    <ul>
+                        <li>Fabrication of carbon steel and stainless steel tanks as per specification</li>
+                        <li>Fabrication of threaded steel pipes and all PVC pipes.</li>
+                        <li>Identifying test circuits and spading limits for flushing and hydrotesting of
+                            pressure vessels</li>
+                        <li>Erection of tanks and high pressure vessels,</li>
+                        <li>Replacement of warn out pipes</li>
+                        <li>Maintenance and shut down works</li>
+                        <li>Water and sewer construction /upgrading</li>
+                        <li>High pressure welding and all coded works</li>
+                        <li>Commissioning of various Plants</li>
+                    </ul>
+                    </div>
+                    
                 </div>
                 <div class="modal-view" id='high-voltage-detail'>
-                    <h4>High Voltage Electrical Installation</h4>
-                    Our company does not limit itself to Low Voltage (LV) installations and is able
-                    to
-                    offer its clients' a full design and installation of HV/LV systems, both
-                    temporary
-                    and permanent. We do Maintenance of Substations, Transformers and HT
-                    switching.
+                    <img src="/static/images/high-voltage.jpg" alt="high voltage installations">
+                    <div class="modal-view-content">
+                        <h2>High Voltage Electrical Installation</h2>
+                    <p>Our company does not limit itself to Low Voltage (LV) installations and is able to offer its clients' a full design and installation of HV/LV systems, both temporary
+                        and permanent. We do Maintenance of Substations, Transformers and HT switching.</p>
+                    
+                    </div>
+                    
                 </div>
                 <div class="modal-view" id='pumps-detail'>
-                    <h4>Industrial Pumps</h4>
-                    Installations, maintenance and overhaul of Warman slurry pumps, hose pumps,
-                    reciprocation pumps, gear pumps, vane pumps, vacuum pumps, and centrifugal
-                    pumps. Pump alignment. This includes trouble shooting during commissioning
-                    and hand over.
+                    <img src="/static/images/pump.jpg" alt="">
+                    <div class="modal-view-content">
+                        <h2>Industrial Pumps</h2>
+                    <p>Installations, maintenance and overhaul of Warman slurry pumps, hose pumps, reciprocation pumps, gear pumps, vane pumps, vacuum pumps, and centrifugal pumps. Pump alignment. This includes troubleshooting during commissioning
+                        and hand over.</p>
+                    </div>
+                    
                 </div>
                 <div class="modal-view" id='commercial-detail'>
-                    <h4>Commercial Installation and Maintenace</h4>
-                    Commercial and Industrial installations form the backbone of the company’s day
-                    to day operations. Our commercial side covers all manners of works including
-                    factory and office installations, amenity‐lighting and even town center and
-                    private clients.
-                    Fusan Construction carries an extensive stock of site temporary distribution
-                    panels, 400v/230v. Our temporary site mains panels can accept loads of up to
-                    3,000amps on a three phase load distribution, and all are supplied with earth
-                    leakage protection. We are able to respond urgently to any given emergency, or
-                    alternatively plan and install a long term solution to an on-going project.
+                    <img src="/static/images/power-panel.JPG" alt="">
+                    <div class="modal-view-content">
+                        <h2>Commercial Installation and Maintenace</h2>
+                    <p>Commercial and Industrial installations form the backbone of the company’s day
+                        to day operations. Our commercial side covers all manners of works including
+                        factory and office installations, amenity‐lighting and even town center and
+                        private clients.
+                        Fusan Construction carries an extensive stock of site temporary distribution
+                        panels, 400v/230v. Our temporary site mains panels can accept loads of up to
+                        3,000amps on a three phase load distribution, and all are supplied with earth
+                        leakage protection. We are able to respond urgently to any given emergency, or
+                        alternatively plan and install a long term solution to an on-going project.</p>
+                    </div>
+                    
 
                 </div>
                 <div class="modal-view" id='domestic-detail'>
-                    <h4>Domestic Electrical Work</h4>
+                    <img src="/static/images/solar-domestic.JPG" alt="solar panel roof">
+                    <div class="modal-view-content">
+                        <h2>Domestic Electrical Work</h2>
+                    </div>
                 </div>
                 <div class="modal-view" id='steel-detail'>
-                    <h4>Structural steel and Plate work</h4>
-                    Fabrication and installation of structural steel.
-                    - Fabrication of tanks,
-                    - Installation and maintenance of storage tanks,
-                    - Fabrication and maintenance of stair cases and hand rails.
-                    - Installation of structural steel,
-                    - Maintenance of fuel and chemical storage tanks
-                    - Painting.
+                    <img src="/static/images/structural-steel-fabrication.jpg" alt="">
+
+                    <div class="modal-view-content">
+                        <h2>Structural steel and Plate work</h2>
+                        <p>Fabrication and installation of structural steel.</p>
+                        <ul>
+                            <li>Fabrication of tanks</li>
+                            <li>Installation and maintenance of storage tanks</li>
+                            <li>Fabrication and maintenance of stair cases and hand rails</li>
+                            <li>Installation of structural steel</li>
+                            <li>Maintenance of fuel and chemical storage tanks</li>
+                            <li>Painting</li>
+                        </ul>
+                    </div>
+                    
                 </div>
 
             </div>

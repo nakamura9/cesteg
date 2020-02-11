@@ -7,6 +7,17 @@ body {
     background-color: whitesmoke !important;
 }
 
+.nav-link.active {
+    background-color: #0c7b93;
+    color: white !important;
+    transition: background-color 0.3s linear;
+}
+
+nav {
+    box-shadow: 0px 2px 4px rgba(220,220,220,0.3),
+                0px 4px 16px rgba(245,245,2245,0.15);
+}
+
 footer {
     min-height:30vh;
     padding:24px;
@@ -100,7 +111,7 @@ footer {
 #detail-view {
     width: 80vw;
     height: 90vh;
-    margin-top: 8vh;
+    margin: 8vh auto;
     background-color: white;
     overflow-y:auto;
     border-top: 3px solid #23374d
@@ -111,13 +122,142 @@ footer {
     height: 100%;
     display: none;
     padding: 16px;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.modal-view-content {
+    position: absolute;
+    left:0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0, 0.4);
+    color:white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:16px;
+}
+
+.modal-view-content h2 {
+    font-family: 'Changa One', cursive;
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+
+
+.modal-view img {
+    width: 100%;
+    height:auto;
 }
 
 .modal-view.active {
-    display: flex!important;
+    display: block!important;
 }
 
 #map {
     height: 250px;
     padding:16px;
 }
+
+
+.product-container {
+    margin: 20px 40px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+.product-category {
+    display:flex;
+    flex-direction: row;
+    padding: 12px;
+    background-color: #142850;
+    color:white;
+}
+
+.product-category h4{
+    flex: auto;
+}
+
+.product-category button {
+    flex: 0;
+    width: 40px;
+}
+
+.product-category-contents {
+    /* display: none; */
+}
+
+.product-category-description {
+    margin: 24px;
+}
+
+.product-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.product-cards .card {
+    width: 200px !important;
+    margin: 16px;
+}
+
+.product-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.news-hero {
+    height: 70vh;
+    overflow:hidden;
+    position:relative;
+}
+
+.news-hero-overlay {
+    width: 100%;
+    height:100%;
+    background-color: rgba(0,0,0, 0.3);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display:block;
+    color:white;
+}
+
+.news-head {
+    position: relative;
+    top:48px;
+    width: 256px;
+    left: 50vw;
+}
+
+.news-head h2{
+    font-family: 'Changa One', cursive;
+    font-size: 4.5rem;
+}
+
+.news-hero img {
+    width: 100%;
+    height: auto;
+}
+
+.news-cards {
+    margin-top: -33vh;
+    margin-left: 24px;
+    width:40vw;
+    display:flex;
+    flex-direction:column;
+    position: absolute;
+}
+
+.news-cards .card {
+    margin-bottom: 24px;
+    box-shadow: 0px 2px 4px rgba(220,220,220,0.3)
+            
+}
+
