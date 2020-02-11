@@ -5,6 +5,7 @@ section {
 
 body {
     background-color: whitesmoke !important;
+    padding-left: 10px;
 }
 
 .nav-link.active {
@@ -32,6 +33,8 @@ footer {
 .card-text{
     text-align: justify;
 }
+
+
 .black {
     background-color: #fff;
     height: 100%;
@@ -285,4 +288,22 @@ footer {
 .navbar img {
     height: 40px;
     width: auto;
+}
+
+.partners {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.partners div {
+    margin: 24px;
+    width: 192px;
+    border: 0px;
+}
+
+.partners img {
+    width: 100%;
+    height: auto;
 }
