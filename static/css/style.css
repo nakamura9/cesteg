@@ -27,9 +27,22 @@ footer {
 }
 
 .about {
-    padding-left: 20px;
+    margin:24px;
     width: 312px;
+    max-width: 312px;
 }
+
+.about img{
+    margin-bottom: 24px;
+}
+
+#case-studies {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .card-text{
     text-align: justify;
 }
@@ -306,4 +319,64 @@ footer {
 .partners img {
     width: 100%;
     height: auto;
+}
+
+@media(max-width: 720px){
+    .about {
+        max-width: 256px;
+        width:256px;
+    }
+
+    .modal-view-content{
+        position: static;
+        color:black;
+        background-color:transparent;
+
+    }
+
+    .modal-view {
+        overflow-y: auto;
+    }
+
+    .modal-view-content h2{
+        font-size: 1.5rem;
+    }
+
+    .news-hero {
+        height: fit-content;
+        overflow-y: auto;
+    }
+
+    .news-head {
+        position: static;
+    }
+
+    .news-head h2 {
+        font-size: 2rem;
+    }
+
+    .news-hero-overlay {
+        height: 30vh;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .news-cards {
+        width: 100%;
+        position: static;
+        margin: 24px !important;
+    }
+
+    .news-cards .card {
+        flex-direction: column;
+        width: 256px ;
+        margin: 16px auto;
+    }
+
+    .news-cards .card>img {
+        
+        width: 100%;
+    }
 }
