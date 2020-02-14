@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import NewsCard from './news_card'
+import NewsDetail from './news_detail'
 import {createClient} from 'contentful'
 
 const client = createClient({
@@ -21,7 +22,7 @@ const news = (props) =>{
             setPosts(res.items)
         });
     }, [])
-
+    console.log(activePost)
     return(
         <React.Fragment>
             <div class='news-hero'>
@@ -34,9 +35,14 @@ const news = (props) =>{
                 <img src="/static/images/bulb.jpg" alt="news-bulb" />
             </div>
             <div class="news-cards">
-                {posts.map((post, i) =>(<NewsCard data={post}/>))}
+                {posts.map((post, i) =>(<NewsCard 
+                                            setActivePost={(id) =>setActivePost(id)}
+                                            data={post}/>))}
             </div>
-            
+            {activePost == '' ? null : 
+                <NewsDetail postID={activePost}
+                    hidePost={() => setActivePost('')}/>
+            }
         </React.Fragment>
     )
 }

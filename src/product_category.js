@@ -25,8 +25,10 @@ const productCategory = (props) =>{
             </div>
             <div className='product-navigation'>
                 <div className="btn-group">
-                    <button className="btn"><i className="fas fa-arrow-left    "></i></button>
-                    <button className="btn"><i className="fas fa-arrow-right    "></i></button>
+                    <button className="btn" onClick={(evt) =>{
+                        evt.stopPropagation()
+                    }}><i className="fas fa-arrow-left    "></i></button>
+                    <button className="btn" onClick={(evt) =>evt.stopPropagation()}><i className="fas fa-arrow-right    "></i></button>
                 </div>
             </div>
         </div>

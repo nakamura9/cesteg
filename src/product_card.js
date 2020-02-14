@@ -1,8 +1,12 @@
 import React from 'react'
 
 const productCard = (props) =>{
+    
+    
     return(
-        <div class="card">
+        <div class="card" onClick={(evt) => {
+            evt.stopPropagation()
+        }}>
             <img src={props.data.fields.image.fields.file.url} alt={props.data.fields.name} />
             <div class="card-body">
                 <h5>{props.data.fields.name}</h5>

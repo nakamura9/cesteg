@@ -380,3 +380,52 @@ footer {
         width: 100%;
     }
 }
+
+
+
+.post-window {
+    display: block !important;
+}
+
+.post-content {
+    background-color: white;
+    width: 85vw;
+    height: 90vh;
+    margin: 4vh auto;
+    padding: 12px;
+}
+
+.post-hero {
+    height: 40vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.post-hero-overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0, 0.4);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    z-index: 100000;
+}
+
+.post-hero img {
+    height: 40vh;
+    width: auto;
+    z-index: -1;
+    display:block;
+    margin: 0px auto;
+}
+
+.news-card-title:hover {
+    text-decoration: underline;
+}
