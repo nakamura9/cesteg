@@ -176,6 +176,11 @@ footer {
     text-align: center;
 }
 
+.modal-view-content p, .modal-view-content ul {
+    width: 80%;
+    margin: 1rem auto;
+}
+
 .modal-view img {
     width: 100%;
     height:auto;
@@ -360,6 +365,12 @@ footer {
     .modal-view-content h2{
         font-size: 1.5rem;
     }
+
+    .modal-view-content p, .modal-view-content ul {
+        width: 100%;
+        
+    }
+    
 
     .news-hero {
         height: fit-content;
