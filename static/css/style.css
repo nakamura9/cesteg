@@ -24,6 +24,7 @@ footer {
     padding:24px;
     color: white;
     background-color: black;
+    margin-top: 2rem;
 }
 
 .about {
@@ -319,6 +320,24 @@ footer {
 .partners img {
     width: 100%;
     height: auto;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.list-group li {
+    list-style-type: none;
+}
+
+.list-group a {
+    text-decoration: none;
+    color: white
+}
+
+.list-group a:hover {
+    color: white
 }
 
 @media(max-width: 575px){
