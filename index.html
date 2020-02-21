@@ -179,6 +179,12 @@
                                     <h6>Domestic Installations</h6>
                                 </div>
                             </div>
+                            <div class="card service-card" onclick='openDetail("telecoms-detail")'>
+                                <div class="card-body">
+                                    <img src="/static/images/radar.png" alt="">
+                                    <h6>Telecommunications</h6>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
@@ -197,10 +203,36 @@
                     </a>
                 </div>
             </div>
-
+            
             <div id="case-studies-roulette" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-4">
+                                <img class='lozad' data-src="static/images/ngezi.jpeg" alt=""
+                                    style="width:100%;height:auto;">
+                            </div>
+                            <div class="col-md-8 col-sm-4 case-studies">
+                                <p>Construction ,maintenance and fault finding on HT lines from
+                                    132kv to 0.4kv- various sites at zesa (from
+                                    Esigodini,Beitbridge, Filabusi, Turkey,Shurugwi
+                                    Unki mine project)
+                                    </p>
+                                    <b>ZESA</b> 
+                                    <p>Substation maintenance and construction
+                                    from 88/11kv, 33/0.4kv
+                                    </p>
+                                    <b>SUBSTATIONS</b> 
+                                    <p> Turkey, Nottingham,Beitbridge
+                                    Limpopo substation and Zvishavane 33/11kv
+                                    upgrade</p>
+                                <br>
+                                <!-- <p><b>Roger Bester</b> <i>Construction Manager</i></p>
+                                <p>+27 832 817 569 </p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
                         <div class="row">
                             <div class="col-sm-12 col-md-4">
                                 <img class='lozad' data-src="static/images/ngezi.jpeg" alt=""
@@ -211,8 +243,8 @@
                                 <p>Steel fabrication, mechanical equipment & machinery installation
                                     including commissioning.</p>
                                 <br>
-                                <p><b>Roger Bester</b> <i>Construction Manager</i></p>
-                                <p>+27 832 817 569 </p>
+                                <!-- <p><b>Roger Bester</b> <i>Construction Manager</i></p>
+                                <p>+27 832 817 569 </p> -->
                             </div>
                         </div>
                     </div>
@@ -227,8 +259,8 @@
                                 <p>Mechanical installation and commissioning of overhead cranes, stone
                                     cutting and polishing machines.</p>
                                 <br>
-                                <p><b>Zeddy Utsiwegota</b> <i>Director</i></p>
-                                <p>+263 4 611 690/2</p>
+                                <!-- <p><b>Zeddy Utsiwegota</b> <i>Director</i></p>
+                                <p>+263 4 611 690/2</p> -->
                             </div>
                         </div>
                     </div>
@@ -245,8 +277,8 @@
                                     plant to client.</p>
 
                                 <br>
-                                <p><b>Daniel O. Lawings</b> <i>Project Manager</i></p>
-                                <p> +27 716 790 954</p>
+                                <!-- <p><b>Daniel O. Lawings</b> <i>Project Manager</i></p>
+                                <p> +27 716 790 954</p> -->
                             </div>
                         </div>
                     </div>
@@ -581,7 +613,19 @@
                     </div>
 
                 </div>
+                <div class="modal-view" id='telecoms-detail'>
+                    <img class='lozad' data-src="/static/images/telecoms.jpg" alt="">
 
+                    <div class="modal-view-content">
+                        <h2>Telecommunications</h2>
+                        <p>The expertise of each of these teams cover the complete spectrum
+                            of telecommunications skills, including: rigging; power equipment
+                            installations and maintenance; telecommunications equipment
+                            installations, commissioning and maintenance; switch
+                            installations, testing and commissioning </p>
+                    </div>
+
+                </div>
             </div>
         </div>
     </main>
