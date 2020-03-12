@@ -20,8 +20,9 @@ const productCategory = (props) =>{
             </p>
             <hr />
             <div className="product-cards">
-                {props.data.fields.products.map(product =>(
-                    <ProductCard data={product}/>))}
+                {props.data.fields.products ?
+                    props.data.fields.products.map(product =>(
+                        <ProductCard data={product}/>)) : null}
             </div>
             <div className='product-navigation'>
                 <div className="btn-group">
