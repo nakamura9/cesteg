@@ -15,6 +15,21 @@ export default function Home() {
       </Head>
       <Nav />
       <main >
+          <div>
+            Jumbotron
+          </div>
+          <div>
+            Departments
+          </div>
+          <div>
+            Brands
+          </div>
+          <div>
+            Categories
+          </div>
+          <div>
+            Sale
+          </div>
       </main>
       <Footer />
     </>

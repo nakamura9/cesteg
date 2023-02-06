@@ -1,0 +1,44 @@
+.nav {
+
+}
+
+.search {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.search input {
+    outline: 0;
+    border: 0;
+    margin: 8px
+}
+
+.logo_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.link_row {
+    background-color: #2A3D4D;
+    color: white !important
+}
+
+.link_row li {
+    list-style-type: none;
+    padding: 16px 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.link_row a {
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+}
+
+
+.link_row ul {
+    display: flex;
+    justify-content: center;
+}
