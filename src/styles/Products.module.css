@@ -1,0 +1,40 @@
+.product {
+    height: 300px;
+    width: 200px;
+    color: #888;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    margin: 1rem 
+  }
+
+  .product p {
+    font-size: .85rem;
+    line-height: .85rem;
+  }
+  
+  .product_text {
+    height: 100px;
+  }
+  
+  .product_img {
+    height: 200px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+  }
+  
+  .product_img img {
+    height: 100%;
+  }
+
+  .products_container {
+    position: relative;
+    
+  }
+
+  .products {
+    display: flex;
+    overflow-x: hidden;
+    max-width: 1400px;
+    margin: 0px auto;
+  }

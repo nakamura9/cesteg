@@ -2,6 +2,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Nav from "../components/nav"
 import Footer from "../components/footer"
+import styles from '../styles/Home.module.css'
+import Brands from '@/components/brands'
+import Jumbotron from '@/components/jumbotron'
+import Departments from '@/components/departments'
+import Clearance from '@/components/clearance'
 
 
 export default function Home() {
@@ -16,19 +21,20 @@ export default function Home() {
       <Nav />
       <main >
           <div>
-            Jumbotron
+              <Jumbotron />
           </div>
           <div>
-            Departments
+            <Departments />
           </div>
           <div>
-            Brands
+            <Brands />
           </div>
-          <div>
+          {/* <div>
             Categories
-          </div>
+          </div> */}
           <div>
-            Sale
+            <h3 style={{textAlign: "center"}}>Clearance Items</h3>
+            <Clearance />
           </div>
       </main>
       <Footer />
