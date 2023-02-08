@@ -57,3 +57,12 @@
     display: flex;
     justify-content: space-around;
  }
+
+ @media (max-width: 900px) {
+    .footer_links {
+        flex-direction: column;
+    }
+    
+  }
+  
+  

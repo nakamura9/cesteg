@@ -1,5 +1,6 @@
 import styles from '../styles/Nav.module.css'
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 
 const Nav = props => {
@@ -7,11 +8,14 @@ const Nav = props => {
         <div className={styles.nav}>
             <div className={styles.search}>
                 <input placeholder="Search" type="text" />
+                <button>
+                    <FontAwesomeIcon icon={faSearch} />
+                </button>
             </div>
             <div className={styles.logo_row}>
                 <img src="cesteg.PNG" width="120px" height="80px" />
                     <div>
-                    Wish Lists Sign In or Create An Account
+                    Wish Lists <br /> Sign In or Create An Account
                 </div>
             </div>
             
